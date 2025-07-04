@@ -1,1 +1,86 @@
+.navbar{
+    background: #b084cc;
+    /* padding:20px 17px ; */
+    /* padding-right: 300px; */
+    display: flex;
+    align-items: center;
+    color:#665687;
+    
+    
+}
+.abc{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    gap:25px;
+    align-items: center;
+    margin: 0px;
+}
+.logo{
+    margin-left: 100px; 
+ }
+ .minilogo{
+    margin:0;
+    display: flex;
+    align-items: center;
+ }
+.container{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-weight: bold;
+    color:#665687;
+
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    color:lightgray;
+    font-size: 20px;
+    padding-right: 5px;
+
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(50, 49, 49);
+    margin: 0px;
+}
+.apple{
+    display: flex;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+    background-color:#e3d8f1;
+    border-radius: 5px;
+    padding:5px;
+    
+}
+.box{
+    display:flex;
+    align-items: center;
+    /* border-radius:15px; */
+    padding:5px 12px;
+    background-color:white;
+    color:black;
+    outline:none;
+    border:none;
+
+}
+.cart{
+    display: flex;
+    gap:30px;
+}
+.navbar-brand img{
+    padding-left: 1px;
+    size:100px;
+}
+.product-container{
+    height: 300px;
+}
+
+
+
 
