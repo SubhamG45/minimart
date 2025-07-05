@@ -3,8 +3,8 @@
 *{
     font-family: "Roboto", sans-serif;
 }
-button{
-     background-color: black; 
+button:hover{
+     background-color: #333; 
      width: 100px;
      
     /* margin: 0 auto; */
@@ -52,6 +52,10 @@ button{
     /* background-color:blue; */
     margin-bottom:  10px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     
 }
 .product-name{
@@ -60,4 +64,17 @@ button{
     padding-left: 10px;
     
 
+}
+.last{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
