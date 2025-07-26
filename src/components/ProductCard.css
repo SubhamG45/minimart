@@ -1,0 +1,47 @@
+.custom-card{
+    box-shadow: 0 4px 10px wheat;
+    transition: transform 0.2s ease;
+    margin: 20px;
+    /* height: 200px; */
+}
+
+.custom-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgb(191, 185, 185);  
+} 
+
+
+.product-image{
+  height: 200px;
+  width: 200px;
+  /* object-fit:cover; */
+  margin-top: 1rem;
+ 
+  margin-left: 30px;
+}
+
+.product-title{
+  overflow: hidden;
+  width:200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+
+.product-description{
+  
+  display:inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap ;
+  width:100%;
+  max-width: 300%;
+  font-size: 14px;
+  line-height: 1.5;
+  
+}
+
+
+
+

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  #carouselExampleIndicators {
+    height: 200px;
+  }
+
+  .carousel-control-next {
+    height: 150px;
+    
+  }
+  .carousel-control-prev{
+    height: 150px;
+    margin-left: 3px;
+  }
+
+
+
+
+}
+.button-submit button:hover {
+  background-color: blue;
+  width: 100px;
+}
+.button-submit button{
+  background-color:chocolate;
+  margin-top: 25px;
+}
+.laptop{
+  background-color: white;
+  width: auto;
+}
+ .carousel-control-prev:hover{
+  background-color: #A6A6A6;
+  height: 200px;
+  width: 100px;
+}
+.carousel-control-next:hover{
+  background-color: #A6A6A6;
+  height: 200px;
+  width: 100px;
+}
+
+
+
+.hero-section {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background-color:#D7C0D0;
+}
+
+.hero-section h1{
+  font-weight: 2px;
+}
+
+
+
+.last {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.carousel-inner {
+  /* height: 300px; */
+  width: 100%;
+  /* align-items: center; */
+  /* display: flex; */
+  /* justify-content: center; */
+  background-color: red;
+}
+.d-block {
+  height: 200px;
+  width: 200px;
+  background-color:#DFBBB1;
+  border:2px solid white;
+}
+.carousel-part {
+  height: 300px;
+}
+.carousel-control-next-icon {
+  height: 200px;
+}
+#carouselExampleIndicators {
+  height: 200px;
+  width: 1400px;
+}
+.image-container image {
+  gap: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a .image {
+  display: flex;
+  gap: 10px;
+ 
+}
+.home-product{
+  display: grid; 
+   grid-template-columns: repeat(4, 1fr); 
+   gap: 5px; 
+   background-color: #008DD5;
+
+}
+
+
+

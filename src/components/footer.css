@@ -1,0 +1,41 @@
+.footer-text{
+    justify-content: last baseline;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    justify-content: center;
+    background-color: #373F51;
+    color: white;
+}
+.rate-us{
+    display: flex;
+    justify-content:center ;
+    background-color: #373F51;
+    color: white;
+    text-decoration:wavy;
+    /* text-decoration: underline; */
+}
+.rate{
+    border: 1px solid orange;
+    background-color: orange;
+    margin-top: 80px;
+    margin-left: 3px;
+}
+.rate-us h5{
+    margin-right: 5px;
+    font-style:italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9px;
+    letter-spacing: 1px;
+    margin-top: 75px;
+
+}.footer-text p{
+    text-decoration: underline;
+    word-spacing: 5px;
+}
+.footer-text p a{
+    text-decoration: none;
+    text-wrap: 5px;
+}

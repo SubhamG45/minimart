@@ -1,0 +1,15 @@
+.image-container {
+  
+  background-color:#6E6362;
+ display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+/* .pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+

@@ -1,10 +1,10 @@
 .navbar{
-    background: #b084cc;
+    background: #00F0B5;
     /* padding:20px 17px ; */
     /* padding-right: 300px; */
     display: flex;
     align-items: center;
-    color:#665687;
+    /* color:#89D2DC; */
     
     
 }
@@ -29,14 +29,14 @@
     /* justify-content: space-between; */
     align-items: center;
     font-weight: bold;
-    color:#665687;
+    /* color:#89D2DC; */
 
 }
 
 .navbar-brand{
     display: flex;
     align-items: center;
-    color:lightgray;
+    /* color:lightgray; */
     font-size: 20px;
     padding-right: 5px;
 
@@ -76,11 +76,10 @@ a{
 .navbar-brand img{
     padding-left: 1px;
     size:100px;
+    color: black;
 }
 .product-container{
     height: 300px;
 }
-
-
 
 

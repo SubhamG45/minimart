@@ -1,0 +1,104 @@
+.contact-heading{
+    /* margin:5px; */
+    /* padding: 2px; */
+    text-align: center;
+    text-decoration:underline;
+    font-size : 1.5rem;
+    font-family: 'Georgia', serif; 
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color:#f0fcfa;
+    width: 1400px;
+    color:purple;
+    
+
+}
+
+
+
+
+.submit-button{
+margin: 12px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: 1px;
+margin-top: 25px;
+
+
+
+}
+.col-md-6{
+    margin-bottom:5px ;
+    margin-left: 2px;
+}
+
+.call-in{
+    margin-left: 5px;
+    color: black;
+    border: 1px solid black;
+    text-shadow: 10px;
+}
+
+.submit-button{
+    background-color:#05CBF0;
+    
+    
+
+}
+#city{
+    margin-left: 15px;
+}
+
+
+.form{
+    width: 800x;
+    height:800px;
+    /* background-color: lightgrey; */
+    margin-left: 1px;
+    margin-bottom: 20px;
+}
+
+
+.form-control{
+    text-shadow: 2px;
+    border-radius: 5px;
+    width: 600px;
+    margin-left: 6px;
+    border:1px solid black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+#inputAddress{
+    width:1100px;
+    border:1px solid black;
+}
+.form-label{
+    font-weight: 500;
+    margin-left:5px;
+    margin-top: 5px;
+}
+#call-in{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width:300px ;
+    padding: 4px;
+    margin-left: 10px;
+    
+}
+#call-in{
+    justify-content: center;
+    flex-direction: column;
+}
+.call label{
+    text-shadow: 7px;
+}
+.check-text{
+    font-size:medium;
+    margin-top: 10px;
+}
+#input-box{
+    margin-left: 3px;
+}
