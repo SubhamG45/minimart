@@ -3,8 +3,8 @@ import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import  Home from "./pages/Home"
-import Navbar from "./components/navbar";
-import Product from"./pages/product";
+import Navbar from "./components/Navbar";
+import Product from "./pages/product";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import { CiDark } from "react-icons/ci";
