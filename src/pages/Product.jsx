@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-import CustomCard from "../components/ProductCard";
+import ProductCard from "../components/ProductCard";
 
 import "./product.css";
 function Product() {
@@ -11,7 +11,7 @@ function Product() {
   // decide how many items per page
   const itemPerPage = 8;
   // calculate which item to show
-  const start = ( currentPage -1 ) * itemPerPage;
+  const start = (currentPage - 1) * itemPerPage;
   const end = start + itemPerPage;
   const itemsToShow = products.slice(start, end);
   // calculate how many total pages
@@ -38,7 +38,7 @@ function Product() {
     <>
       <div className="image-container">
         {itemsToShow.map((item) => (
-          <CustomCard
+          <ProductCard
             className="img"
             key={item.id}
             image={item.image}
@@ -48,52 +48,49 @@ function Product() {
             btnName={"Add To Cart"}
           />
         ))}
-        </div>
-        <nav aria-label="Page navigation example">
-          <ul className="pagination justify-content-center">
-            <li className={`page-item ${currentPage === 1 ? "dissable" : ""} `}>
-              <button
-                className="page-link"
-                onClick={() => handlePageChange(currentPage - 1)}
-              >
-                Previous
-              </button>
-            </li>
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul className="pagination justify-content-center">
+          <li className={`page-item ${currentPage === 1 ? "dissable" : ""} `}>
+            <button
+              className="page-link"
+              onClick={() => handlePageChange(currentPage - 1)}
+            >
+              Previous
+            </button>
+          </li>
 
-            {/* page number */}
-            {Array.from({ length: totalPages }).map((item, index) => (
-              <li
-                key={index}
-                className={`page-item ${
-                  currentPage === index + 1 ? "active" : ""
-                }`}
-              >
-                <button
-                  className="page-link"
-                  onClick={() => handlePageChange(index + 1)}
-                >
-                  {index + 1}
-                </button>
-              </li>
-            ))}
-            {/*  Nextt button   */}
+          {/* page number */}
+          {Array.from({ length: totalPages }).map((item, index) => (
             <li
+              key={index}
               className={`page-item ${
-                currentPage === totalPages ? "disable" : ""
+                currentPage === index + 1 ? "active" : ""
               }`}
             >
               <button
                 className="page-link"
-                onClick={() => handlePageChange(currentPage + 1)}
+                onClick={() => handlePageChange(index + 1)}
               >
-                Next
-                
+                {index + 1}
               </button>
             </li>
-          </ul>
-        </nav>
-        
-      
+          ))}
+          {/*  Nextt button   */}
+          <li
+            className={`page-item ${
+              currentPage === totalPages ? "disable" : ""
+            }`}
+          >
+            <button
+              className="page-link"
+              onClick={() => handlePageChange(currentPage + 1)}
+            >
+              Next
+            </button>
+          </li>
+        </ul>
+      </nav>
     </>
   );
 }

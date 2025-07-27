@@ -2,7 +2,7 @@ import "./ProductCard.css";
 import { useContext } from "react";
 import { CartContext } from "../context/CardContext";
 
-function ProductCard({image, title, price,description, btnName} ) {
+function ProductCard({ image, title, price, description, btnName }) {
   const { addToCart } = useContext(CartContext);
   const handleCart = () => {
     addToCart({ image, title, price, description });
@@ -16,10 +16,11 @@ function ProductCard({image, title, price,description, btnName} ) {
           <p className="card-text">{price}</p>
           <p className="card-text product-description">{description}</p>
 
-          <button className="btn btn-primary" onClick={handleCart}>{btnName}</button>
+          <button className="btn btn-primary" onClick={handleCart}>
+            {btnName}
+          </button>
         </div>
       </div>
-      
     </>
   );
 }

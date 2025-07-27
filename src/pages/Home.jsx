@@ -1,4 +1,4 @@
-import  { useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import CustomCard from "../components/ProductCard";
 import earbuds from "../assets/earbuds-looks.png";
 import asus from "../assets/laptop-asus.png";
@@ -7,15 +7,12 @@ import "./Home.css";
 import clothes from "../assets/sweater.jpeg";
 import watch from "../assets/watch.jpeg";
 import pant from "../assets/pant.jpeg";
-import laptop from "../assets/laptop.jpeg";
-import fan from "../assets/fan.jpeg";
 import iphone from "../assets/iphone.jpeg";
-function Home(){
-const navigate = useNavigate();
-const btnShopnow = ()=>{
-  navigate('/product')
-
-}
+function Home() {
+  const navigate = useNavigate();
+  const btnShopnow = () => {
+    navigate("/product");
+  };
 
   return (
     <>
@@ -76,15 +73,16 @@ const btnShopnow = ()=>{
         <div className="hero-section">
           <h3>Shop The Latest Product</h3>
 
-          
-
           <div className="button-submit">
-            <button onClick={btnShopnow}> Shop Now</button>
+            <button className="btn btn-primary" onClick={btnShopnow}>
+              {" "}
+              Shop Now
+            </button>
           </div>
         </div>
       </div>
 
-      <div  className="home-product">
+      <div className="home-product">
         <CustomCard
           image={clothes}
           title={"clothes"}
@@ -105,14 +103,14 @@ const btnShopnow = ()=>{
           btnName={"Add To Cart"}
         />
 
-        <CustomCard className="laptop"
+        <CustomCard
+          className="laptop"
           image={iphone}
           title={"iphone"}
           price={"$110"}
           btnName={"Add To Cart"}
         />
       </div>
-      
     </>
   );
 }
